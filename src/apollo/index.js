@@ -3,7 +3,7 @@ import { getMainDefinition } from '@apollo/client/utilities';
 import { GraphQLWsLink } from '@apollo/client/link/subscriptions';
 import { createClient } from 'graphql-ws';
 
-const GRAPHQL_ENDPOINT = 'ws://anonymouschatapp-server.adaptable.app/graphql';
+const GRAPHQL_ENDPOINT = 'wss://anonymouschatapp-server.adaptable.app/graphql';
 const HTTP_ENDPOINT = 'https://anonymouschatapp-server.adaptable.app/graphql';
 
 const httpLink = new HttpLink({
