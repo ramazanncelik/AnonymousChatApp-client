@@ -17,7 +17,7 @@ const Messages = ({ messages }) => {
     }, [messages]);
 
     return (
-        <div className='w-[50%] h-[75%] overflow-auto bg-white rounded-lg p-2 flex flex-col space-y-2'>
+        <div className='w-[50%] h-[75%] overflow-auto bg-white border border-slate-600 rounded-lg p-2 flex flex-col space-y-2'>
             {messages.map((message) => {
                 if (message.From === user) {
                     return (
